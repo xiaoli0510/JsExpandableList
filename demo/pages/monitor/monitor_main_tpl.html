@@ -1,0 +1,38 @@
+<li class="cusv1-accordion-item area_accordion_item" data-area_id={{item_area_id}} data-area_index={{item_area_index}}>
+    <a href="#" class="item-link item-content accordion-item-header" style="display:block">
+        <div class="area_list_item_unit1">
+            <span class="area_list_source">{{item_area_name}}</span>
+            <span class="area_equip_num">{{item_equip_num}}</span>
+            <img src="images/monitor/icon_arrow_to_right.png" class="icon_to_expand_area">
+        </div>
+        <div class="area_list_item_unit2">
+            <img src="images/monitor/monitor_location_icon.png" class="loc_icon"/>
+            <span class="equip_list_location" style="width:80%">{{item_area_location}}</span>
+        </div>
+    </a>
+    <div class="accordion-item-content">
+        <div class="list-block">
+            <ul style="padding-left: 0">
+                {{#each subs}}
+                <li class="swipeout equip_according_list_item"
+                    data-area_id={{area_id}} data-device_id={{device_id}} data-device_name={{device_name}}
+                    data-isConcerned={{isConcerned}}>
+                    <div class="swipeout-content">
+                        <div class="concerns_click_area">
+                            <img class="expanded_equips_item_state" src="{{concerns_state_icon}}"/>
+                        </div>
+                        <div class="expanded_equips_click_area">
+                            <span class="expanded_equip_item_source">{{device_name}}</span>
+                            <img src="images/monitor/icon_arrow_to_right.png" class="icon_to_equip_details">
+                        </div>
+                    </div>
+                    <div class="swipeout-actions-right">
+                        <a href="#" class="swipeout-close cancle_concerns equips_item_swipeout_btn"
+                           style="background-color:{{btn_item_left_bg}}">{{btn_item_left_text}}</a>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</li>
