@@ -6,4 +6,4 @@
 4，列表item项可侧滑操作（类似于QQ和微信）；
 5，数据缓存；
 
-使用教程详见：http://blog.csdn.net/fxp850899969/article/details/70158440
+使用教程详见：http://blog.csdn.net/xiaoxiaoluckylucky/article/details/79373835
